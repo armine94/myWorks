@@ -1,0 +1,18 @@
+1)SELECT e.name AS Name, e.surname AS Surname, p.name AS Project_Name
+FROM employees AS e
+INNER JOIN employee_projects AS ep
+ON e.id = ep.employee_id
+INNER JOIN projects AS p
+ON ep.project_id = p.id
+WHERE ep.project_id = 1
+GROUP BY e.name, e.surname;
+
+2)SELECT projects.name AS Project_Name,  SUM(workHours) AS Total_Work_Hours
+FROM employee_projects
+INNER JOIN projects
+ON employee_projects.project_id = projects.id
+WHERE project_id = 1;
+
+3)SELECT COUNT(*) AS Active_Projects
+FROM projects
+WHERE complete = 0;

@@ -1,0 +1,25 @@
+DROP PROCEDURE IF EXISTS myProcedure;
+
+DELIMITER //
+CREATE PROCEDURE myProcedure(IN costumerID INT, IN productID INT)
+BEGIN
+SELECT c.name as Cpstumer_name,
+s.name AS Supplier_name,
+p.name AS Product_name,
+ol.productQuantity AS Product_count,
+p.priceSale * ol.productQuantity AS Total_Salie
+FROM Costumers AS c
+INNER JOIN Orders AS o
+ON o.costumer_id = c.id
+INNER JOIN OrderLines AS ol
+ON o.id = ol.order_id
+INNER JOIN Products p
+ON ol.product_id = p.id
+INNER JOIN Supplierts AS s
+ON p.suppliert_id = s.id
+WHERE c.id = costumerID AND p.id=productID;
+END//
+
+DELIMITER ;
+
+CALL myProcedure(3, 2);

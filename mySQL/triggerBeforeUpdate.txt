@@ -1,0 +1,23 @@
+DROP TRIGGER IF EXISTS triggerBeforeUpdate;
+
+SELECT * FROM OrderLines;
+
+DELIMITER //
+
+CREATE TRIGGER triggerBeforeUpdate
+BEFORE UPDATE
+ON OrderLines
+FOR EACH ROW
+BEGIN
+IF OLD.productDelivired = 0 THEN
+SET NEW.productDelivired = 1;
+SET NEW.productDeliviredTime = NOW();
+END IF;
+END//
+
+DELIMITER ;
+
+UPDATE OrderLines
+SET product_id = 2 WHERE id = 6;
+
+SELECT * FROM OrderLines;

@@ -1,0 +1,6 @@
+CREATE TRIGGER deleteConnections
+BEFORE DELETE
+ON Costumers
+FOR EACH ROW
+DELETE FROM Orders
+where Orders.costumer_id = OLD.id;

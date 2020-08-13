@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portal 3</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Roboto&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="header flex">
+
+				<div class="flex logo">
+					<a href="javascript.void(0)" class="flex logo-text">
+						<svg viewBox="0 0 20 20" class="DemoPanel__icon--goBack----3rTP" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.835 5.872a.5.5 0 10-.67-.744l-4.99 4.493a.513.513 0 00-.078.082.5.5 0 00.077.676l4.991 4.493a.5.5 0 10.67-.744L8.247 10l4.588-4.128z"></path></svg>
+						<p>Real Estate Responsive Website Template</p>
+					</a>
+					<a href="javascript.void(0)" class="blank">
+						<svg viewBox="0 0 13 13" width="13" height="13" class="DemoPanel__icon--link----2TVk">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.793 1.5l-6.06 6.06a.5.5 0 10.708.707l6.06-6.06v2.75a.5.5 0 001 0V1a.498.498 0 00-.5-.5H8.044a.5.5 0 000 1h2.75zM.5 4a.5.5 0 01.5-.5h5.09a.5.5 0 010 1H1.5v7h7V6.91a.5.5 0 011 0V12a.5.5 0 01-.5.5H1a.5.5 0 01-.5-.5V4z"></path>
+						</svg>
+					</a>
+				</div>
+
+				<div class="flex responsive">
+					<button class="responsive-button">
+						<svg viewBox="0 0 12 20" class="ResponseSwitchers__itemIcon----1nyd" width="20" height="20"><g><use xlink:href="#responseMobile_svg__path0_fill"></use><use xlink:href="#responseMobile_svg__path1_fill"></use><use xlink:href="#responseMobile_svg__path2_fill"></use></g><defs><path id="responseMobile_svg__path0_fill" fill-rule="evenodd" d="M2.152 1C1.516 1 1 1.516 1 2.152v15.696C1 18.484 1.516 19 2.152 19h7.435c.636 0 1.152-.516 1.152-1.152V2.152C10.74 1.516 10.223 1 9.587 1H2.152zM0 2.152C0 .964.963 0 2.152 0h7.435c1.19 0 2.152.964 2.152 2.152v15.696A2.152 2.152 0 019.587 20H2.152A2.152 2.152 0 010 17.848V2.152z"></path><path id="responseMobile_svg__path1_fill" fill-rule="evenodd" d="M3.304 2.152a.5.5 0 01.5-.5h4.13a.5.5 0 110 1h-4.13a.5.5 0 01-.5-.5z"></path><path id="responseMobile_svg__path2_fill" fill-rule="evenodd" d="M5.87 17.935a.087.087 0 100-.174v.174zm0 .826a.913.913 0 110-1.826.913.913 0 010 1.826z"></path></defs></svg>
+						<div class="display-none mini"></div>
+						<div class="mobile display-none">Mobile</div>
+					</button>
+					<button class="responsive-button"><svg viewBox="0 0 20 20" class="ResponseSwitchers__itemIcon----1nyd" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.152 1C3.517 1 3 1.516 3 2.152v15.696C3 18.484 3.517 19 4.152 19h10.74c.636 0 1.152-.516 1.152-1.152V2.152c0-.636-.516-1.152-1.153-1.152H4.152zM2 2.152C2 .964 2.965 0 4.152 0h10.74c1.188 0 2.152.964 2.152 2.152v15.696A2.152 2.152 0 0114.89 20H4.152A2.153 2.153 0 012 17.848V2.152z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.521 1.326a.413.413 0 100 .827.413.413 0 000-.827zM9.521 17.935a.087.087 0 100-.174.087.087 0 000 .174zm-.913-.087a.913.913 0 111.827 0 .913.913 0 01-1.827 0z"></path></svg>
+						<div class="display-none mini"></div>
+						<div class="ipad display-none">Tablet</div>
+					</button>
+					<button class="responsive-button responsive-active"><svg viewBox="0 0 20 20" class="ResponseSwitchers__itemIcon----1nyd" width="20" height="20"><g><use xlink:href="#responseDesktop_svg__path0_fill"></use><use xlink:href="#responseDesktop_svg__path1_fill"></use><use xlink:href="#responseDesktop_svg__path2_fill"></use></g><defs><path id="responseDesktop_svg__path0_fill" fill-rule="evenodd" d="M1.74 1.063c-.382 0-.74.358-.74.863v13.018c0 .505.358.863.74.863h16.52c.383 0 .74-.357.74-.863V1.926c0-.506-.357-.863-.74-.863H1.74zM0 1.926C0 .891.753 0 1.74 0h16.52C19.249 0 20 .891 20 1.926v13.018c0 1.035-.752 1.926-1.74 1.926H1.74c-.987 0-1.74-.891-1.74-1.926V1.926z"></path><path id="responseDesktop_svg__path1_fill" fill-rule="evenodd" d="M3.717 19.5a.5.5 0 01.5-.5h11.566a.5.5 0 010 1H4.216a.5.5 0 01-.5-.5z"></path><path id="responseDesktop_svg__path2_fill" fill-rule="evenodd" d="M10 15.87c.276 0 .5.308.5.688v2.273c0 .38-.224.689-.5.689s-.5-.308-.5-.689v-2.273c0-.38.224-.688.5-.688z"></path></defs></svg>
+						<div class="display-none mini"></div>
+						<div class="comp display-none">Desktop</div>
+					</button>
+				</div>
+
+				<div class="recycle_bin">
+					<button>
+						<span class="go-to-cart">
+							<svg viewBox="0 0 20 20" class="AddToCart__icon----2BN3" width="20" height="20"><use xlink:href="#cart_svg__path0_fill" opacity="0.01"></use><use xlink:href="#cart_svg__path1_fill" transform="translate(14.043 15.043)"></use><use xlink:href="#cart_svg__path1_fill" transform="translate(4.956 15.043)"></use><use xlink:href="#cart_svg__path2_fill" transform="translate(0 1)"></use><use xlink:href="#cart_svg__path3_fill" transform="translate(4.058 5.956)"></use><defs><path id="cart_svg__path0_fill" fill-rule="evenodd" d="M0 0h20v20H0V0z"></path><path id="cart_svg__path1_fill" fill-rule="evenodd" d="M0 1.74a1.74 1.74 0 113.48 0 1.74 1.74 0 01-3.48 0zM1.74 1a.74.74 0 100 1.48.74.74 0 000-1.48z"></path><path id="cart_svg__path2_fill" fill-rule="evenodd" d="M0 .5A.5.5 0 01.5 0h2.891a.5.5 0 01.487.385l3.214 13.658h8.69a.5.5 0 110 1H6.696a.5.5 0 01-.487-.385L2.995 1H.5A.5.5 0 010 .5z"></path><path id="cart_svg__path3_fill" fill-rule="evenodd" d="M0 .5A.5.5 0 01.5 0h14.942a.5.5 0 01.474.658l-2.478 7.435a.5.5 0 01-.474.342H2.249a.5.5 0 010-1h10.355L14.748 1H.5A.5.5 0 010 .5z"></path></defs></svg>
+							<span>Go to Cart</span>
+						</span>
+					</button>
+				</div>
+
+				<div class="chat">
+					<div class="start-chat">
+						<button class="chat-button">
+							<svg viewBox="0 0 20 20" class="Chat__icon----21q-" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 6.228C1 3.432 3.82 1 7.522 1c3.701 0 6.522 2.432 6.522 5.228a.5.5 0 001 0C15.044 2.698 11.576 0 7.522 0 3.467 0 0 2.699 0 6.228c0 1.623.712 3.177 1.926 4.295L.48 13.057a.5.5 0 00.62.712l3.97-1.588c.357.098.733.176 1.097.225a.5.5 0 10.134-.99 6.882 6.882 0 01-1.111-.242.5.5 0 00-.331.014l-2.8 1.12L3 10.66a.5.5 0 00-.121-.638C1.689 9.073 1 7.672 1 6.228zm12.717 1.62c-3.404 0-6.282 2.513-6.282 5.456 0 3.884 4.4 6.692 8.36 5.082l3.116 1.169a.5.5 0 00.623-.692l-1.065-2.13c.984-.91 1.531-2.079 1.531-3.429 0-2.943-2.879-5.456-6.283-5.456zm-5.282 5.456c0-2.268 2.299-4.456 5.282-4.456 2.984 0 5.283 2.188 5.283 4.456 0 1.155-.502 2.143-1.465 2.914a.5.5 0 00-.134.614l.67 1.34-2.113-.793a.5.5 0 00-.379.012c-3.426 1.523-7.144-.949-7.144-4.087z"></path></svg>
+							<span class="Chat__text----3IZq">Start Chat</span>
+						</button>
+					</div>
+
+					<div class="dropdown-72">
+						<span>$72</span>
+						<div class="dropdown-icon"></div>
+					</div>
+
+					<div class="services">
+						<span>Services</span>
+						<div class="dropdown-icon-top"></div>
+						<div class="services-hover">
+							<ul>
+								<li>
+									<div>
+										<i class="TMQuarkCheckbox__icon----2ohW">
+											<span class="TMQuarkCheckbox__icon----2ohW-check">	&#10004;</span>
+										</i>
+										<img src="./images/comp.svg" alt="">
+										<span>
+											Ready-to-Use Website Premium
+										</span>
+									</div>
+									<p>$249</p>
+								</li>
+								<li>
+									<div>
+										<i class="TMQuarkCheckbox__icon----2ohW">
+											<span class="TMQuarkCheckbox__icon----2ohW-check">	&#10004;</span>
+										</i>
+										<img src="./images/matit.svg" alt="">
+										<span>
+											WordPress Version
+										</span>
+									</div>
+									<p>$79</p>
+								</li>
+								<li>
+									<div>
+										<i class="TMQuarkCheckbox__icon----2ohW">
+											<span class="TMQuarkCheckbox__icon----2ohW-check">	&#10004;</span>
+										</i>
+										<img src="./images/vahan.svg" alt="">
+										<span>
+											GDPR & CCPA Compliance - New Privacy Rules
+										</span>
+									</div>
+									<p>$49</p>
+								</li>
+								<li>
+									<div>
+										<i class="TMQuarkCheckbox__icon----2ohW">
+											<span class="TMQuarkCheckbox__icon----2ohW-check">	&#10004;</span>
+										</i>
+										<img src="./images/settings.svg" alt="">
+										<span>
+											Must-Have Launch Pack
+										</span>
+									</div>
+									<p>$72</p>
+								</li>
+								<li>
+									<div>
+										<i class="TMQuarkCheckbox__icon----2ohW">
+											<span class="TMQuarkCheckbox__icon----2ohW-check">	&#10004;</span>
+										</i>
+										<img src="./images/settings.svg" alt="">
+										<span>
+											Template Upload and Setup
+										</span>
+									</div>
+									<p><span class="p-old">$49</span> <span class="p-new">$39</span></p>
+								</li>
+								<li>
+									<div>
+										<i class="TMQuarkCheckbox__icon----2ohW">
+											<span class="TMQuarkCheckbox__icon----2ohW-check">	&#10004;</span>
+										</i>
+										<img src="./images/kist.svg" alt="">
+										<span>
+											Add Drag&Drop HTML Builder by Novi
+										</span>
+									</div>
+									<p>$99</p>
+								</li>
+								<li class="li-button">
+									<button>
+										<svg viewBox="0 0 20 20" class="DemoPanel__addServicesIcon----2tkR" width="20" height="20"><use xlink:href="#cart_svg__path0_fill" opacity="0.01"></use><use xlink:href="#cart_svg__path1_fill" transform="translate(14.043 15.043)"></use><use xlink:href="#cart_svg__path1_fill" transform="translate(4.956 15.043)"></use><use xlink:href="#cart_svg__path2_fill" transform="translate(0 1)"></use><use xlink:href="#cart_svg__path3_fill" transform="translate(4.058 5.956)"></use><defs><path id="cart_svg__path0_fill" fill-rule="evenodd" d="M0 0h20v20H0V0z"></path><path id="cart_svg__path1_fill" fill-rule="evenodd" d="M0 1.74a1.74 1.74 0 113.48 0 1.74 1.74 0 01-3.48 0zM1.74 1a.74.74 0 100 1.48.74.74 0 000-1.48z"></path><path id="cart_svg__path2_fill" fill-rule="evenodd" d="M0 .5A.5.5 0 01.5 0h2.891a.5.5 0 01.487.385l3.214 13.658h8.69a.5.5 0 110 1H6.696a.5.5 0 01-.487-.385L2.995 1H.5A.5.5 0 010 .5z"></path><path id="cart_svg__path3_fill" fill-rule="evenodd" d="M0 .5A.5.5 0 01.5 0h14.942a.5.5 0 01.474.658l-2.478 7.435a.5.5 0 01-.474.342H2.249a.5.5 0 010-1h10.355L14.748 1H.5A.5.5 0 010 .5z"></path></defs></svg>
+										<span> Add Following Services to Your Order</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<button class="collection" type="button">
+						<svg viewBox="0 0 20 20" class="TMLibraryLike__icon----RlWo TMLibraryLike__icon--normal----2jWj" width="20" height="20"><use xlink:href="#heart_svg__path0_fill" transform="translate(0 1)"></use><defs><path id="heart_svg__path0_fill" d="M10.607 15.73a23.179 23.179 0 011.716-1.538c.347-.287 1.628-1.322 1.881-1.53C17.558 9.908 19 7.983 19 5.53c0-4.794-6.128-6.205-8.106-2.254L10 5.063l-.894-1.787C7.129-.674 1 .733 1 5.53c0 2.453 1.442 4.377 4.796 7.131.253.209 1.532 1.242 1.879 1.528.713.59 1.25 1.068 1.714 1.536.224.225.427.446.611.665.183-.217.385-.437.607-.66zM9.387 1.872c.22.278.535.8.613.956a9.3 9.3 0 01.613-.957C13.459-1.653 20-.07 20 5.53c0 6.006-8.253 9.035-10 12.647C8.254 14.564 0 11.536 0 5.53 0-.076 6.543-1.65 9.387 1.873z"></path></defs></svg>
+						<div class="add-collection">
+							<span class="collection-span">Add to Collection</span>
+							<div class=" mini collection-mini"></div>
+						</div>
+
+					</button>
+
+					<div class="dropdown-end">
+						<div class="dropdown-icon-top"></div>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<div class="section1">
+				<div class="rentspace">
+					<div class="rentspace-left">
+						<div class="rentspace-child">
+							<div class="navbar-toggle">
+								<div class="navbar-toggle-1">
+								</div>
+								<div class="navbar-toggle-2">
+								</div>
+								<div class="navbar-toggle-3">
+								</div>
+							</div>
+
+							<div class="rentspace-text">
+								<a href="javascript.void(0)">
+									<span class="brand-name">RentSpace</span> <br>
+									<span class="brand-slogan">Apartments for Rent</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="navbar">
+							<ul>
+								<li><a  class="active"> <span>Home</span></a></li>
+								<li><a  > <span>About</span></a></li>
+								<li>
+									<a  class="service-dropdown"  >
+										<span>Services</span>
+										<div class="rentspace-dropdown"></div>
+										<div class="service-hover">
+											<div class="navbar-mini"></div>
+											<div>
+												<ul>
+													<li>
+														<span>Houses for rent</span>
+													</li>
+													<li>
+														<span>Flats for rent</span>
+													</li>
+													<li>
+														<span>Villas for rent</span>
+													</li>
+													<li>
+														<span>Bussines solutions</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="pages">
+									<a  >
+										<span>Pages</span>
+										<div class="rentspace-dropdown"></div>
+										<div class="pages-hover">
+											<div class="pages-hover-top">
+												<h3>Pages 1</h3>
+												<div class="hr"></div>
+												<div>
+													<ul>
+														<li><span>Our Team</span></li>
+														<li><span>History</span></li>
+														<li><span>Testimonials</span></li>
+														<li><span>Single Service</span></li>
+													</ul>
+												</div>
+											</div>
+											<div>
+												<h3>Pages 2</h3>
+												<div class="hr"></div>
+												<div>
+													<ul>
+														<li><span>Pricing</span></li>
+														<li><span>Privacy</span></li>
+														<li><span>404</span></li>
+														<li><span>503</span></li>
+													</ul>
+												</div>
+											</div>
+											<div>
+												<h3>Elements</h3>
+												<div class="hr"></div>
+												<div>
+													<ul>
+														<li><span>Typography</span></li>
+														<li><span>Forms</span></li>
+														<li><span>FAQ</span></li>
+														<li><span>Single Service</span></li>
+													</ul>
+												</div>
+											</div>
+											<div></div>
+											<div></div>
+										</div>
+									</a>
+								</li>
+								<li><a > <span>Apartment</span></a></li>
+								<li><a > <span>Contacts</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+
+
+					<div class="login">
+						<i class="fa fa-user"></i>
+						<div class="form">
+						<h3>Log In</h3>
+							<form>
+								<input type="text" placeholder="Username" required>
+								<input type="password" placeholder="Password" required>
+								<div class="rememberme">
+									<div></div>
+									<p>Remember Me</p>
+								</div>
+								<div class="submit">
+									<button type="submit">Login</button>
+									<button type="submit" class="blue-button ">Register</button>
+								</div>
+
+								<div class="forgot">
+									<p>Forgot <a href="javascript.void(0)">username</a>/<a href="javvascript.void(0)">password</a>?</p>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="section2">
+				<div class="prev">
+					&lt;
+				</div>
+				<div class="section2-text">
+					<p>Real Estate is Our</p>
+					<p>Life</p>
+
+					<div class="section2-search">
+						<div class="location">
+							<label for="location">Location</label>
+							<input type="text" id="location">
+							<span class="form-validation">The text field is required.</span>
+						</div>
+
+						<div class="form-proptype">
+							<a href="javascript.void(0)">
+								<span>Property Type</span>
+								<div class="form-proptype-dropdown-icon"></div>
+							</a>
+							<div class="proptype-hover">
+								<ul>
+									<li>
+										<a href="javascript.void(0)"><span>Residential</span></a>
+									</li>
+									<li>
+										<a href="javascript.void(0)"><span>Commercial</span></a>
+									</li>
+									<li>
+										<a href="javascript.void(0)"><span>Vacand Land</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="form-proptype">
+							<a href="javascript.void(0)">
+								<span>Listing Type</span>
+								<div class="form-proptype-dropdown-icon"></div>
+							</a>
+							<div class="proptype-hover listing">
+								<ul>
+									<li>
+										<a href="javascript.void(0)"><span>Exclusive Right to Sell</span></a>
+									</li>
+									<li>
+										<a href="javascript.void(0)"><span>Exclusive Agency</span></a>
+									</li>
+									<li>
+										<a href="javascript.void(0)"><span>Open Agency</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="form-proptype">
+							<a href="javascript.void(0)">
+								<span>No. of Bedrooms</span>
+								<div class="form-proptype-dropdown-icon"></div>
+							</a>
+							<div class="proptype-hover bedroom">
+								<ul>
+									<li>
+										<a href="javascript.void(0)"><span>1 Bedroom</span></a>
+									</li>
+									<li>
+										<a href="javascript.void(0)"><span>2 Bedrooms</span></a>
+									</li>
+									<li>
+										<a href="javascript.void(0)"><span>3 Bedrooms</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="form-proptype-search">
+							<button type="submit">Search</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="next">
+					&gt;
+				</div>
+
+			</div>
+
+			<div class="section-search">
+				<div class="location">
+					<label for="location">Location</label>
+					<input type="text" id="location">
+					<span class="form-validation">The text field is required.</span>
+				</div>
+
+				<div class="form-proptype form-proptype-1 ">
+					<a >
+						<span>Property Type</span>
+						<div class="form-proptype-dropdown-icon"></div>
+					</a>
+					<div class="proptype-hover">
+						<ul>
+							<li>
+								<a><span>Residential</span></a>
+							</li>
+							<li>
+								<a ><span>Commercial</span></a>
+							</li>
+							<li>
+								<a><span>Vacand Land</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="form-proptype">
+					<a >
+						<span>Listing Type</span>
+						<div class="form-proptype-dropdown-icon"></div>
+					</a>
+					<div class="proptype-hover listing">
+						<ul>
+							<li>
+								<a ><span>Exclusive Right to Sell</span></a>
+							</li>
+							<li>
+								<a><span>Exclusive Agency</span></a>
+							</li>
+							<li>
+								<a ><span>Open Agency</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="form-proptype form-proptype-3">
+					<a >
+						<span>No. of Bedrooms</span>
+						<div class="form-proptype-dropdown-icon"></div>
+					</a>
+					<div class="proptype-hover bedroom">
+						<ul>
+							<li>
+								<a ><span>1 Bedroom</span></a>
+							</li>
+							<li>
+								<a  ><span>2 Bedrooms</span></a>
+							</li>
+							<li>
+								<a  ><span>3 Bedrooms</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="form-proptype-search">
+					<button type="submit">Search</button>
+				</div>
+			</div>
+
+			<div class="section3">
+				<!-- <div class="section3-paragraph"> -->
+					<h2 class="paragraph">Recommended Apartments</h2>
+				<!-- </div> -->
+<div>
+				<div class="images">
+					<div class="card">
+						<div class="image">
+							<img src="./images/1.jpg" alt="">
+							<span class="image-span">$45<span>/day</span></span>
+							<div class="image-hover">
+								<p>Located in New Jersey, Rentspace offers
+									one-bedroom, two-bedroom, three-bedroom,
+									and four-bedroom apartments for rent. Call
+									today for pricing and availability!
+								</p>
+							</div>
+						</div>
+						<a href="javascript.void(0)"><h4>Newport</h4></a>
+						<p>100 Town Square Place, Jersey City, NJ</p>
+					</div>
+
+					<div class="card">
+						<div class="image">
+							<img src="./images/2.jpg" alt="">
+							<span class="image-span">$49<span>/day</span></span>
+							<div class="image-hover">
+								<p>
+									Located in New Jersey, Rentspace offers one-bedroom, two-bedroom, three-bedroom, and four-bedroom apartments for rent. Call today for pricing and availability!
+								</p>
+							</div>
+						</div>
+						<a href="javascript.void(0)"><h4>Modera Lofts</h4></a>
+						<p>Jersey City, NJ 07032</p>
+					</div>
+
+					<div class="card">
+						<div class="image">
+							<img src="./images/3.jpg" alt="">
+							<span class="image-span">$52<span>/day</span></span>
+							<div class="image-hover">
+								<p>
+									Located in New Jersey, Rentspace offers one-bedroom, two-bedroom, three-bedroom, and four-bedroom apartments for rent. Call today for pricing and availability!
+								</p>
+							</div>
+						</div>
+						<a href="javascript.void(0)"><h4>Altis at Kendall Square</h4></a>
+						<p>16950 SW 93 Street, Miami, FL</p>
+					</div>
+				</div>
+
+				<div class="images images-2">
+					<div class="card">
+						<div class="image">
+							<img src="./images/4.jpg" alt="">
+							<span class="image-span">$45<span>/day</span></span>
+							<div class="image-hover image-hover2">
+								<p>
+									Located in New Jersey, Rentspace offers one-bedroom, two-bedroom, three-bedroom, and four-bedroom apartments for rent. Call today for pricing and availability!
+								</p>
+							</div>
+						</div>
+						<a href="javascript.void(0)"><h4>The Excelsior II</h4></a>
+						<p>Hackensack, NJ 07601 - Near New York, NY</p>
+					</div>
+
+					<div class="card">
+						<div class="image">
+							<img src="./images/5.jpg" alt="">
+							<span class="image-span">$49<span>/day</span></span>
+							<div class="image-hover image-hover2">
+								<p>
+									Located in New Jersey, Rentspace offers one-bedroom, two-bedroom, three-bedroom, and four-bedroom apartments for rent. Call today for pricing and availability!
+								</p>
+							</div>
+						</div>
+						<a href="javascript.void(0)"><h4>Spring Creek Towers</h4></a>
+						<p>Brooklyn, NY 11239 - Near New York, NY</p>
+					</div>
+
+					<div class="card">
+						<div class="image">
+							<img src="./images/6.jpg" alt="">
+							<span class="image-span">$52<span>/day</span></span>
+							<div class="image-hover image-hover2">
+								<p>
+									Located in New Jersey, Rentspace offers one-bedroom, two-bedroom, three-bedroom, and four-bedroom apartments for rent. Call today for pricing and availability!
+								</p>
+							</div>
+						</div>
+						<a href="javascript.void(0)"><h4>Valley And Bloom</h4></a>
+						<p>Montclair, NJ 07042 - Near New York, NY</p>
+					</div>
+				</div>
+
+				<div class="images">
+					<div class="card">
+						<div class="image">
+							<img src="./images/7.jpg" alt="">
+							<span class="image-span span3">$45<span>/day</span></span>
+							<div class="image-hover image-hover3">
+								<p>
+									Located in New Jersey, Rentspace offers one-bedroom, two-bedroom, three-bedroom, and four-bedroom apartments for rent. Call today for pricing and availability!
+								</p>
+							</div>
+						</div>
+						<a href="javascript.void(0)"><h4>Ava Dobro</h4></a>
+						<p>100 Willoughby Street, Brooklyn, NY</p>
+					</div>
+
+					<div class="card">
+						<div class="image">
+							<img src="./images/8.jpg" alt="">
+							<span class="image-span">$49<span>/day</span></span>
+							<div class="image-hover image-hover3">
+								<p>
+									Located in New Jersey, Rentspace offers one-bedroom, two-bedroom, three-bedroom, and four-bedroom apartments for rent. Call today for pricing and availability!
+								</p>
+							</div>
+						</div>
+						<a href="javascript.void(0)"><h4>Brookchester Apartments</h4></a>
+						<p>New Milford, NJ 07646 - Near New York, NY</p>
+					</div>
+
+					<div class="card">
+						<div class="image">
+							<img src="./images/9.jpg" alt="">
+							<span class="image-span">$52<span>/day</span></span>
+							<div class="image-hover image-hover3">
+								<p>
+									Located in New Jersey, Rentspace offers one-bedroom, two-bedroom, three-bedroom, and four-bedroom apartments for rent. Call today for pricing and availability!
+								</p>
+							</div>
+						</div>
+						<a href="javascript.void(0)"><h4>Dorchester Manor</h4></a>
+						<p>Entire home/apt New Milford, NJ 07646 - Near New York, NY</p>
+					</div>
+				</div>
+</div>
+			</div>
+
+			<div class="section4" >
+				<div class="bg">
+					<video autoplay muted loop id="myVideo"  style=" width: 100%; min-width: 100%;">
+						<source src="./images/video-bg.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+				  	</video>
+					<div class="section4-hover">
+						<p class="paragraph">Our Advantages</p>
+					<div class="rotates">
+						<div class="rotate-1">
+							<div class="rotate">
+								<span class="rotate-span">25</span>
+
+							</div>
+							<p>New apartments every day</p>
+						</div>
+
+						<div class="rotate-2">
+							<div class="rotate">
+								<span class="rotate-span">56k</span>
+							</div>
+							<p>Satisfied <br> customers</p>
+						</div>
+
+						<div class="rotate-3">
+							<div class="rotate">
+								<span class="rotate-span">856</span>
+							</div>
+							<p>Luxury apartments</p>
+						</div>
+						<div class="rotate-4">
+							<div class="rotate">
+								<span class="rotate-span">85</span>
+							</div>
+							<p>Large mansions</p>
+						</div>
+					</div>
+
+					<!-- <div class="section4-text">
+						<div>
+							<p>New apartments every day</p>
+						</div>
+						<div>
+							<p>Satisfied <br> customers</p>
+						</div>
+						<div>
+							<p>Luxury apartments</p>
+						</div>
+						<div>
+							<p>Large mansions</p>
+						</div>
+					</div> -->
+
+					</div>
+				</div>
+			</div>
+
+			<div class="section5">
+				<p class="paragraph">Services</p>
+				<div class="services-images">
+					<div class="service-image">
+						<img src="./images/11.jpg" alt="">
+						<div class="service-hover-image">
+							<p>Vacation <br>Rentals</p>
+							<button class="section5-button">Learn More</button>
+						</div>
+					</div>
+					<div class="service-image">
+						<img src="./images/12.jpg" alt="">
+						<div class="service-hover-image">
+							<p>Roommate  <br>Share</p>
+							<button class="section5-button">Learn More</button>
+						</div>
+					</div>
+					<div class="service-image">
+						<img src="./images/13.jpg" alt="">
+						<div class="service-hover-image">
+							<p>Corporate  <br>Apartments</p>
+							<button class="section5-button">Learn More</button>
+						</div>
+					</div>
+					<div class="service-image">
+						<img src="./images/14.jpg" alt="">
+						<div class="service-hover-image">
+							<p>Unfurnished</p>
+							<button class="section5-button">Learn More</button>
+						</div>
+					</div>
+				</div>
+				<div class="all-services">
+					<button class="section5-button ">All Services</button>
+				</div>
+			</div>
+
+			<div class="section6">
+				<img src="./images/bg22.jpg" alt="">
+				<div class="section6-text">
+					<p class="paragraph">Testimonials</p>
+					<div class="user"></div>
+					<p class="name">Ryan Webber</p>
+					<span>	&#10077;</span>
+					<p class="cite">
+						Thank you very much! I'm impressed with the range of your apartments.<br>
+						The one I have rent is literally amazing, thanks again!
+					</p>
+					<div class="carusel">
+						<div class="carusel-active"></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="section7">
+				<p class="paragraph">Contact Us</p>
+				<div class="section7-inputs">
+					<div>
+						<div class="section7-name">
+							<input type="text" placeholder="Name">
+							<span class="section7-span section7-span1">The text field is required.</span>
+						</div>
+						<div class="section7-phone">
+							<input type="text" placeholder="Phone">
+						<span class="section7-span">The text field is required.</span>
+						</div>
+					</div>
+					<div class="section7-email">
+						<input type="text" placeholder="Email">
+						<span class="section7-span">The text field is required.</span>
+					</div>
+					<div class="section7-textarea">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+						<span class="section7-span">The text field is required.</span>
+					</div>
+
+					<div class="secton7-button">
+						<button class="section5-button ">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+				<div>
+					<span class="marker fontos"></span>
+					<span class="marker-text">8901 Marmora Road, Glasgow, D04 89GR</span>
+				</div>
+				<div>
+					<span class="phone fontos"></span>
+					<span class="phone-text">1-800-1234-567</span>
+				</div>
+				<div class="footer-icons">
+					<span class="fb fontos"></span>
+					<span class="twitter fontos"></span>
+					<span class="insta fontos"></span>
+					<span class="google fontos"></span>
+				</div>
+				<div class="footer-privacy">
+					<span>
+						Rentspace © Privacy Policy
+					</span>
+				</div>
+			</div>
+		</footer>
+		<script src="JQuery3.4.1.js"></script>
+ 		<script src="index.js"></script>
+	</body>
+</html>

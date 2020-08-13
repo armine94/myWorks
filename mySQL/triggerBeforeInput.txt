@@ -1,0 +1,29 @@
+SELECT * FROM Costumers;
+
+DELIMITER //
+
+CREATE TRIGGER triggerBeforeInsert
+BEFORE INSERT
+ON Costumers
+FOR EACH ROW
+BEGIN
+IF @tmp = 2 THEN
+SET @tmp = 0;
+SET new.name = "TRIGGER";
+SET @loop = @loop + 1;
+ELSE
+SET  @tmp = @tmp + 1;
+SET @loop = @loop + 1;
+END IF;
+END//
+
+DELIMITER ;
+
+SET @tmp = 0;
+SET @loop = 0;
+
+INSERT INTO Costumers(name, city, street, phone)
+values("Serine", "Abovyan", "Arajin_Poxoc", "37455887744"),
+("Gayane", "Aparan", "Kentron", "37444556699"),
+("Mariam", "EREVAN", "Masiv_2", "37498747576"),
+("ANUSH","EREVAN", "AVAN", "37493554411");
