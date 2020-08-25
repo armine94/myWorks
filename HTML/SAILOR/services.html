@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlexBox</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <link rel="stylesheet" href="icofont/icofont.css">
+        <link rel="stylesheet" href="icofont/icofont.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/services.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <script>
+            let changeActive =  function(index) {
+
+                document.getElementsByClassName('features__tab__active')[0].className += ' features__disable';
+                document.getElementsByClassName('features__tab__active')[0].classList.remove("features__tab__active");
+                document.getElementsByClassName('features__active')[0].classList.remove("features__active");
+
+                switch (index) {
+                    case 1:
+                        document.getElementById('tab__1').classList.remove("features__disable");
+                        document.getElementById('tab__1').className += 'features__tab__active';
+
+                        document.getElementById('a__1').className += 'features__active';
+
+                        break;
+
+                    case 2:
+                        document.getElementById('tab__2').classList.remove("features__disable");
+                        document.getElementById('tab__2').className += 'features__tab__active';
+
+                        document.getElementById('a__2').className += 'features__active';
+
+                        break;
+
+                    case 3:
+                        document.getElementById('tab__3').classList.remove("features__disable");
+                        document.getElementById('tab__3').className += 'features__tab__active';
+
+                        document.getElementById('a__3').className += 'features__active';
+
+                        break;
+
+                    case 4:
+                        document.getElementById('tab__4').classList.remove("features__disable");
+                        document.getElementById('tab__4').className += 'features__tab__active';
+
+                        document.getElementById('a__4').className += 'features__active';
+
+                        break;
+
+                    case 5:
+                        document.getElementById('tab__5').classList.remove("features__disable");
+                        document.getElementById('tab__5').className += 'features__tab__active';
+
+                        document.getElementById('a__5').className += 'features__active';
+
+
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+
+            setInterval(function() {
+                let scrollTop = document.getElementById('wrapper').scrollTop;
+                if(scrollTop > 200) {
+                    document.getElementById('main__button').style.display = 'flex';
+                }
+
+                if(scrollTop < 200) {
+                    document.getElementById('main__button').style.display = 'none';
+                }
+            }, 300)
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo" >
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div>
+                <ul class="header__devices">
+                    <li class="header__active">
+                        <svg viewBox="0 0 20 20" class="header__desktop" width="20" height="20"><g><use xlink:href="#responseDesktop_svg__path0_fill"></use><use xlink:href="#responseDesktop_svg__path1_fill"></use><use xlink:href="#responseDesktop_svg__path2_fill"></use></g><defs><path id="responseDesktop_svg__path0_fill" fill-rule="evenodd" d="M1.74 1.063c-.382 0-.74.358-.74.863v13.018c0 .505.358.863.74.863h16.52c.383 0 .74-.357.74-.863V1.926c0-.506-.357-.863-.74-.863H1.74zM0 1.926C0 .891.753 0 1.74 0h16.52C19.249 0 20 .891 20 1.926v13.018c0 1.035-.752 1.926-1.74 1.926H1.74c-.987 0-1.74-.891-1.74-1.926V1.926z"></path><path id="responseDesktop_svg__path1_fill" fill-rule="evenodd" d="M3.717 19.5a.5.5 0 01.5-.5h11.566a.5.5 0 010 1H4.216a.5.5 0 01-.5-.5z"></path><path id="responseDesktop_svg__path2_fill" fill-rule="evenodd" d="M10 15.87c.276 0 .5.308.5.688v2.273c0 .38-.224.689-.5.689s-.5-.308-.5-.689v-2.273c0-.38.224-.688.5-.688z"></path></defs></svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 20 20" class="header__tablet" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.152 1C3.517 1 3 1.516 3 2.152v15.696C3 18.484 3.517 19 4.152 19h10.74c.636 0 1.152-.516 1.152-1.152V2.152c0-.636-.516-1.152-1.153-1.152H4.152zM2 2.152C2 .964 2.965 0 4.152 0h10.74c1.188 0 2.152.964 2.152 2.152v15.696A2.152 2.152 0 0114.89 20H4.152A2.153 2.153 0 012 17.848V2.152z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.521 1.326a.413.413 0 100 .827.413.413 0 000-.827zM9.521 17.935a.087.087 0 100-.174.087.087 0 000 .174zm-.913-.087a.913.913 0 111.827 0 .913.913 0 01-1.827 0z"></path></svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 12 20" class="header__mobile" width="20" height="20"><g><use xlink:href="#responseMobile_svg__path0_fill"></use><use xlink:href="#responseMobile_svg__path1_fill"></use><use xlink:href="#responseMobile_svg__path2_fill"></use></g><defs><path id="responseMobile_svg__path0_fill" fill-rule="evenodd" d="M2.152 1C1.516 1 1 1.516 1 2.152v15.696C1 18.484 1.516 19 2.152 19h7.435c.636 0 1.152-.516 1.152-1.152V2.152C10.74 1.516 10.223 1 9.587 1H2.152zM0 2.152C0 .964.963 0 2.152 0h7.435c1.19 0 2.152.964 2.152 2.152v15.696A2.152 2.152 0 019.587 20H2.152A2.152 2.152 0 010 17.848V2.152z"></path><path id="responseMobile_svg__path1_fill" fill-rule="evenodd" d="M3.304 2.152a.5.5 0 01.5-.5h4.13a.5.5 0 110 1h-4.13a.5.5 0 01-.5-.5z"></path><path id="responseMobile_svg__path2_fill" fill-rule="evenodd" d="M5.87 17.935a.087.087 0 100-.174v.174zm0 .826a.913.913 0 110-1.826.913.913 0 010 1.826z"></path></defs></svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__navigation">
+                <ul style="list-style: none;">
+                    <li>
+                        <a href="#">
+                            <i class="icofont-exit"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icofont-home"></i>
+                        </a>
+                    </li>
+                    <li class="header__navigation__download">
+                        <a href="#"><i class="icofont-download"></i><span>Free Download</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icofont-simple-left"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icofont-simple-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="wrapper" id="wrapper">
+            <nav>
+                <section  class="navbar">
+                    <ul>
+                        <li class="navbar__logo">
+                            <a href="#">SAILOR</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li style="position: relative;" class="navbar__drop__down">
+                            <a href="#">
+                                About
+                                <i class="icofont-simple-down"></i>
+
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="about__team.html">Team</a>
+                                </li>
+                                <li>
+                                    <a href="testimonials.html">Testimonials</a>
+                                </li>
+
+                                <li class="deep__drop">
+                                    <a href="#">Deep Drop Down <i class="icofont-simple-left"></i></a>
+                                  <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                        </li>
+                        <li class="navbar__active">
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button>Get Started</button>
+                </section>
+            </nav>
+
+            <section class="main__info" id="main__info">
+                <div >
+                    <h2>Services</h2>
+                    <p><a href="index.html">Home</a> <span>/ Services</span> </p>
+                  </div>
+            </section>
+
+            <section class="cards">
+                <div>
+                    <i class="icofont-computer"></i>
+                    <h4> <a href="#">Lorem Ipsum</a></h4>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                </div>
+
+                <div>
+                    <i class="icofont-chart-bar-graph"></i>
+                    <h4> <a href="#">Dolor Sitema</a></h4>
+                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                </div>
+
+                <div>
+                    <i class="icofont-image"></i>
+                    <h4> <a href="#">Sed ut perspiciatis</a></h4>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                </div>
+
+                <div>
+                    <i class="icofont-settings"></i>
+                    <h4> <a href="#">Nemo Enim</a></h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+
+                <div>
+                    <i class="icofont-earth"></i>
+                    <h4> <a href="#">Magni Dolore</a></h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                </div>
+
+                <div>
+                    <i class="icofont-tasks-alt"></i>
+                    <h4> <a href="#">Eiusmod Tempor</a></h4>
+                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligend</p>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="services__title">
+                    <p>FEATURES</p>
+                    <h1>CHECK OUR FEATURES</h1>
+                </div>
+
+                <div class="features">
+                    <div class="features__navbar">
+                        <ul>
+                            <li  onclick="changeActive(1)">
+                              <a class="features__active" data-toggle="tab" href="#tab-1" id="a__1">Modi sit est</a>
+                            </li>
+                            <li onclick="changeActive(2)">
+                              <a data-toggle="tab" href="#tab-2" id="a__2">Unde praesentium sed</a>
+                            </li>
+                            <li onclick="changeActive(3)">
+                              <a data-toggle="tab" href="#tab-3" id="a__3">Pariatur explicabo vel</a>
+                            </li>
+                            <li onclick="changeActive(4)">
+                              <a data-toggle="tab" href="#tab-4" id="a__4">Nostrum qui quasi</a>
+                            </li>
+                            <li onclick="changeActive(5)">
+                              <a data-toggle="tab" href="#tab-5" id="a__5">Iusto ut expedita aut</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="features__content">
+                        <div id="tab__1" class="features__tab__active">
+                            <div class="features__order">
+                                <h3>Architecto ut aperiam autem id</h3>
+                                <p class="features__italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                            </div>
+                            <div class="features__image">
+                                <img src="images/features-1.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div id="tab__2" class="features__disable">
+                            <div class="features__order">
+                                <h3>Et blanditiis nemo veritatis excepturi</h3>
+                                <p class="features__italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                                <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                            </div>
+                            <div class="features__image">
+                                <img src="images/features-2.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div id="tab__3" class="features__disable">
+                            <div class="features__order">
+                                <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                                <p class="features__italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+                                <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                            </div>
+                            <div class="features__image">
+                                <img src="images/features-3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div id="tab__4" class="features__disable">
+                            <div class="features__order">
+                                <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                                <p class="features__italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                                <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                            </div>
+                            <div class="features__image">
+                                <img src="images/features-4.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div id="tab__5" class="features__disable">
+                            <div class="features__order">
+                                <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                                <p class="features__italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                                <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                            </div>
+                            <div class="features__image">
+                                <img src="images/features-5.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <a class="main__button" href="#main" id="main__button">
+                <i class="icofont-simple-up"></i>
+            </a>
+
+            <footer>
+                <section class="footer__top">
+                    <div style="display: flex;">
+                        <div class="footer__sailor">
+                            <div class="footer__info">
+                                <h3>Sailor</h3>
+                                <p>
+                                    A108 Adam Street <br>
+                                    NY 535022, USA<br><br>
+                                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                                    <strong>Email:</strong> info@example.com<br>
+                                </p>
+                                <div class="footer__social__links">
+                                    <a href="#" class="twitter">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                    <a href="#" class="facebook">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                    <a href="#" class="instagram">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                    <a href="#" class="skype">
+                                        <i class="icofont-skype"></i>
+                                    </a>
+                                    <a href="#" class="linkedin">
+                                        <i class="icofont-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="icofont-simple-right"></i><a href="#">About us</a></li>
+                                <li><i class="icofont-simple-right"></i></p> <a href="#">Home</a></li>
+                                <li><i class="icofont-simple-right"></i></p></i> <a href="#">Services</a></li>
+                                <li><i class="icofont-simple-right"></i></p> </i> <a href="#">Terms of service</a></li>
+                                <li><i class="icofont-simple-right"></i></p> </i> <a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__services">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__newsletter">
+                            <h4>Our Newsletter</h4>
+                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                            <form action="" method="post">
+                                <input type="email" name="email"><input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+
+
+                </section>
+                <section class="footer__end">
+                    <div class="footer__copyright">
+                        © Copyright <strong><span>Sailor</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="footer__credits">
+                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    </div>
+                </section>
+            </footer>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,115 @@
+.pricing {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.pricing__row {
+    width: 86.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    margin-top: 60px
+}
+
+.pricing__row > div {
+    flex: 0 0 25%;
+    max-width: 20%;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing__row h4 {
+    font-size: 36px;
+    color: #d9232d;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.pricing__row h3 {
+    font-weight: 400;
+    margin: -20px -20px 20px -20px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777777;
+    background: #f8f8f8;
+}
+
+.pricing__row h4 span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pricing__row ul li {
+    padding-bottom: 16px;
+}
+
+.pricing__row ul {
+    padding: 0;
+    list-style: none;
+    color: #444444;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.pricing__row ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.pricing__btn:hover {
+    background: #e1444d;
+}
+
+.pricing__btn {
+    background: #d9232d;
+    display: inline-block;
+    padding: 9px 35px 10px 35px;
+    border-radius: 4px;
+    color: #fff;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #e24d55;
+    text-decoration: none;
+}
+
+.pricing__wrap {
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.pricing__active {
+    color: #fff !important;
+    background-color: #d9232d !important;
+}
+
+.pricing__advanced {
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+    background: #d9232d;
+    color: #fff;
+}

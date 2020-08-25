@@ -1,0 +1,147 @@
+.google__map {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.google__map > div, .contact {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.google__map iframe {
+    border:0;
+    height: 270px;
+    width: 100% !important;
+    margin-bottom: 60px;
+}
+
+.contact__icons {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    display: block;
+}
+
+.contact__info {
+    width: 100%;
+    background-color: #fff;
+    color: #444444;
+}
+
+.contact__info > div {
+    margin-bottom: 40px;
+}
+
+.contact__info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #556270;
+}
+
+.contact__info i {
+    font-size: 20px;
+    color: #556270;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #edeff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact__info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #8795a4;
+}
+
+.contact {
+    padding-bottom: 50px;
+}
+
+.contact i:hover {
+    background: #556270;
+    color: #fff;
+}
+
+.contact form {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+form > div {
+    margin-bottom: 25px;
+}
+
+.form__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__row > div {
+    width: 48.5%;
+}
+.form__row > div:focus {
+    border: 0 !important;
+}
+.form-group {
+    padding-bottom: 8px;
+}
+
+.contact .form__group input {
+    width: 94.5%;
+    border: 1px solid #ced4da;
+    background-color: #fff !important;
+}
+
+.form__group textarea {
+    width: 96.5%;
+    border: 1px solid #ced4da;
+}
+
+.contact form input {
+    width: 88.5%;
+    padding: 15px 20px;
+    border: 1px solid #ced4da;
+}
+
+form textarea {
+    padding: 10px 12px;
+}
+
+.form__button {
+    text-align: center;
+}
+
+.contact button[type="submit"] {
+    margin: 0 auto;
+    font-size: 16px;
+    background: #d9232d;
+    border: 0;
+    padding: 22px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.contact button[type="submit"]:hover {
+    background: #e24d55;
+}
+
+@media (max-width: 992px) {
+    .contact {
+        display: block !important;
+    }
+
+    .contact__icons {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+}

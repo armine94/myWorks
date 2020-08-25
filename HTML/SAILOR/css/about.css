@@ -1,0 +1,215 @@
+.main__info {
+    padding: 18px 0;
+    background: #f8f9fa;
+    min-height: 40px;
+}
+
+.main__info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.main__info h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0;
+    color: #444444;
+}
+
+.main__info a {
+    color: #d9232d;
+    text-decoration: none;
+}
+
+.main__info span {
+    padding-right: 10px;
+    color: #6b7b8d;
+}
+
+.main__team, .main__skills {
+    background-color: #f8f9fa;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.main__team__title, .teams , .main__skills__title, .main__pricing__title {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.teams__member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(85, 98, 112, 0.08);
+    padding: 30px;
+    border-radius: 4px;
+    background: white;
+    display: flex;
+    align-items: flex-start;
+    width: 43%;
+    margin-bottom: 30px;
+}
+
+.teams__img {
+    overflow: hidden;
+    width: 140px;
+    border-radius: 4px;
+}
+
+.teams__img img {
+    max-width: 100%;
+    height: auto;
+    transition: ease-in-out 0.3s;
+}
+
+.teams__img img:hover {
+    -webkit-filter: none;
+    filter: none;
+    transform: scale(1.15);
+}
+.teams__info {
+    padding-left: 30px;
+}
+
+.teams__member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #556270;
+}
+
+.teams__member  span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+    color: #444444;
+}
+
+.teams__member span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #dee2e6;
+    bottom: 0;
+    left: 0;
+}
+
+.teams__member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #444444;
+}
+
+.teams__social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.teams__social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    background: #8795a4;
+    margin-right: 7px;
+}
+
+.teams__social a:hover {
+    background: #d9232d;
+    color: #fff;
+    text-decoration: none;
+}
+
+.teams__social a i {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 2px;
+
+}
+
+.main__skills {
+    background-color: #fff;
+}
+
+.skills__content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.skills__sheet__1, .skills__sheet__2 {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+.skills__progress {
+    height: 50px;
+    display: block;
+    background: none;
+}
+
+.skill__name {
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #556270;
+}
+
+.progress-bar-wrap {
+    background: white;
+}
+
+.progress-bar-wrap > div {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #6b7b8d;
+}
+
+[class^="progress__bar"] {
+    width: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

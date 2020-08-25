@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlexBox</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="icofont/icofont.css">
+        <link rel="stylesheet" href="icofont/icofont.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/contacts.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <script>
+            setInterval(function() {
+                let scrollTop = document.getElementById('wrapper').scrollTop;
+                if(scrollTop > 200) {
+                    document.getElementById('main__button').style.display = 'flex';
+                }
+
+                if(scrollTop < 200) {
+                    document.getElementById('main__button').style.display = 'none';
+                }
+            }, 300)
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo" >
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div>
+                <ul class="header__devices">
+                    <li class="header__active">
+                        <svg viewBox="0 0 20 20" class="header__desktop" width="20" height="20"><g><use xlink:href="#responseDesktop_svg__path0_fill"></use><use xlink:href="#responseDesktop_svg__path1_fill"></use><use xlink:href="#responseDesktop_svg__path2_fill"></use></g><defs><path id="responseDesktop_svg__path0_fill" fill-rule="evenodd" d="M1.74 1.063c-.382 0-.74.358-.74.863v13.018c0 .505.358.863.74.863h16.52c.383 0 .74-.357.74-.863V1.926c0-.506-.357-.863-.74-.863H1.74zM0 1.926C0 .891.753 0 1.74 0h16.52C19.249 0 20 .891 20 1.926v13.018c0 1.035-.752 1.926-1.74 1.926H1.74c-.987 0-1.74-.891-1.74-1.926V1.926z"></path><path id="responseDesktop_svg__path1_fill" fill-rule="evenodd" d="M3.717 19.5a.5.5 0 01.5-.5h11.566a.5.5 0 010 1H4.216a.5.5 0 01-.5-.5z"></path><path id="responseDesktop_svg__path2_fill" fill-rule="evenodd" d="M10 15.87c.276 0 .5.308.5.688v2.273c0 .38-.224.689-.5.689s-.5-.308-.5-.689v-2.273c0-.38.224-.688.5-.688z"></path></defs></svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 20 20" class="header__tablet" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.152 1C3.517 1 3 1.516 3 2.152v15.696C3 18.484 3.517 19 4.152 19h10.74c.636 0 1.152-.516 1.152-1.152V2.152c0-.636-.516-1.152-1.153-1.152H4.152zM2 2.152C2 .964 2.965 0 4.152 0h10.74c1.188 0 2.152.964 2.152 2.152v15.696A2.152 2.152 0 0114.89 20H4.152A2.153 2.153 0 012 17.848V2.152z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.521 1.326a.413.413 0 100 .827.413.413 0 000-.827zM9.521 17.935a.087.087 0 100-.174.087.087 0 000 .174zm-.913-.087a.913.913 0 111.827 0 .913.913 0 01-1.827 0z"></path></svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 12 20" class="header__mobile" width="20" height="20"><g><use xlink:href="#responseMobile_svg__path0_fill"></use><use xlink:href="#responseMobile_svg__path1_fill"></use><use xlink:href="#responseMobile_svg__path2_fill"></use></g><defs><path id="responseMobile_svg__path0_fill" fill-rule="evenodd" d="M2.152 1C1.516 1 1 1.516 1 2.152v15.696C1 18.484 1.516 19 2.152 19h7.435c.636 0 1.152-.516 1.152-1.152V2.152C10.74 1.516 10.223 1 9.587 1H2.152zM0 2.152C0 .964.963 0 2.152 0h7.435c1.19 0 2.152.964 2.152 2.152v15.696A2.152 2.152 0 019.587 20H2.152A2.152 2.152 0 010 17.848V2.152z"></path><path id="responseMobile_svg__path1_fill" fill-rule="evenodd" d="M3.304 2.152a.5.5 0 01.5-.5h4.13a.5.5 0 110 1h-4.13a.5.5 0 01-.5-.5z"></path><path id="responseMobile_svg__path2_fill" fill-rule="evenodd" d="M5.87 17.935a.087.087 0 100-.174v.174zm0 .826a.913.913 0 110-1.826.913.913 0 010 1.826z"></path></defs></svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__navigation">
+                <ul style="list-style: none;">
+                    <li>
+                        <a href="#">
+                            <i class="icofont-exit"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icofont-home"></i>
+                        </a>
+                    </li>
+                    <li class="header__navigation__download">
+                        <a href="#"><i class="icofont-download"></i><span>Free Download</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icofont-simple-left"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icofont-simple-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapper" id="wrapper">
+            <nav>
+
+                <section  class="navbar">
+                    <div class="navbar__logo">
+                        <a href="#">SAILOR</a>
+                    </div>
+
+
+                    <ul>
+                        <!-- <li class="navbar__logo">
+                        </li> -->
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="navbar__drop__down">
+                            <a href="#">
+                                About
+                                <i class="icofont-simple-down"></i>
+
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="about__team.html">Team</a>
+                                </li>
+                                <li>
+                                    <a href="testimonials.html">Testimonials</a>
+                                </li>
+
+                                <li class="deep__drop">
+                                    <a href="#">Deep Drop Down <i class="icofont-simple-left"></i></a>
+                                  <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="navbar__active">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="navbar__active">
+                            <a href="contacts.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button>Get Started</button>
+                </section>
+            </nav>
+
+            <main>
+                <section class="main__info" id="main__info">
+                    <div >
+                        <h2>Contact</h2>
+                        <p><a href="index.html">Home</a> <span>/ Contact</span> </p>
+                    </div>
+                </section>
+
+                <section class="google__map">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+
+                    <div class="contact">
+                        <div class="contact__icons">
+                            <div class="contact__info">
+                                <div class="contact__address">
+                                    <i class="icofont-google-map"></i>
+                                    <h4>Location:</h4>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+
+                                <div class="contact__email">
+                                    <i class="icofont-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p>info@example.com</p>
+                                </div>
+
+                                <div class="contact__phone">
+                                    <i class="icofont-phone"></i>
+                                    <h4>Call:</h4>
+                                    <p>+1 5589 55488 55s</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <form action="">
+                            <div class="form__row">
+                                <div>
+                                    <input type="text" name="name"  id="name" placeholder="Your Name" minlength="4" maxlength="20" required >
+                                </div>
+
+                                <div>
+                                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text"  name="subject" id="subject" placeholder="Subject" min="4" required >
+                            </div>
+
+                            <div class="form__group">
+                                <textarea placeholder="Message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <div class="form__button"><button type="submit">Send Message</button></div>
+
+                        </form>
+                    </div>
+                </section>
+
+                <a class="main__button" href="#main" id="main__button">
+                    <i class="icofont-simple-up"></i>
+                </a>
+
+            </main>
+            <footer>
+                <section class="footer__top">
+                    <div style="display: flex;">
+                        <div class="footer__sailor">
+                            <div class="footer__info">
+                                <h3>Sailor</h3>
+                                <p>
+                                    A108 Adam Street <br>
+                                    NY 535022, USA<br><br>
+                                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                                    <strong>Email:</strong> info@example.com<br>
+                                </p>
+                                <div class="footer__social__links">
+                                    <a href="#" class="twitter">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                    <a href="#" class="facebook">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                    <a href="#" class="instagram">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                    <a href="#" class="skype">
+                                        <i class="icofont-skype"></i>
+                                    </a>
+                                    <a href="#" class="linkedin">
+                                        <i class="icofont-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="icofont-simple-right"></i><a href="#">About us</a></li>
+                                <li><i class="icofont-simple-right"></i></p> <a href="#">Home</a></li>
+                                <li><i class="icofont-simple-right"></i></p></i> <a href="#">Services</a></li>
+                                <li><i class="icofont-simple-right"></i></p> </i> <a href="#">Terms of service</a></li>
+                                <li><i class="icofont-simple-right"></i></p> </i> <a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__services">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__newsletter">
+                            <h4>Our Newsletter</h4>
+                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                            <form action="" method="post">
+                                <input type="email" name="email"><input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+
+
+                </section>
+                <section class="footer__end">
+                    <div class="footer__copyright">
+                        © Copyright <strong><span>Sailor</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="footer__credits">
+                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>
