@@ -40,6 +40,7 @@ The goal of this project is Build React Table Component with infinite scroll sup
 
 
 ## Client side directory structure
+```bash
 ├── package.json
 ├── package-lock.json
 ├── public
@@ -53,3 +54,5 @@ The goal of this project is Build React Table Component with infinite scroll sup
     ├── data
     │   └── data.js
     └── index.js
+    ```
+    
