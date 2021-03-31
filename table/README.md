@@ -53,6 +53,4 @@ The goal of this project is Build React Table Component with infinite scroll sup
     │       └── Table.js
     ├── data
     │   └── data.js
-    └── index.js
-    ```
-    
+    └── index.js  
